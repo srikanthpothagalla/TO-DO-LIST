@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 20px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.todo-app:hover {
+  transform: scale(1.02);
+}
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 35px;
+  height: 35px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input {
+  flex: 1;
+  border: 1px solid #ddd;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+input:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+button {
+  border: none;
+  padding: 12px 20px;
+  background: #ff6f61;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e45750;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+ul li:hover {
+  background: #f0f0f0;
+}
+ul li.checked {
+  color: #777;
+  text-decoration: line-through;
+  background: #d4edda;
+}
+.datetime {
+  font-size: 14px;
+  color: #ff9800;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.countdown {
+  font-size: 14px;
+  color: #444;
+  background: #ffc107;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.delete {
+  cursor: pointer;
+  font-size: 20px;
+  width: 10px;   
+  height: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px; /* Makes it a perfect circle */
+  background: #ff4d4d; /* 🔴 New vibrant red color */
+  color: white;
+  transition: 0.3s;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a slight shadow */
+}
+
+.delete:hover {
+  background: #cc0000; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
